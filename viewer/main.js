@@ -35,8 +35,8 @@ const locations = {
   "Marseille": { coords: [5.3744239, 43.2954564] },
   "Strasbourg": { coords: [7.7505894, 48.5818679] },
   "Arçon": { coords: [6.3839249, 46.9453348] },
-  "Luxembourg": { coords: [6.3839249, 46.9453348] },
-  "Niederanven": { coords: [6.3839249, 46.9453348] },
+  "Luxembourg": { coords: [6.1308563, 49.6106593] },
+  "Niederanven": { coords: [6.2437456, 49.6532855] },
 };
 
 document.getElementById("location-menu").addEventListener("change", (event) => {
