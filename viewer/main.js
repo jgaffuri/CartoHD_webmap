@@ -6,6 +6,20 @@ import ImageTile from 'ol/source/ImageTile.js';
 import { fromLonLat } from 'ol/proj';
 
 
+
+
+const locations = {
+  "Paris": { coords: [2.3290438, 48.8629166] },
+  "Marseille": { coords: [5.3744239, 43.2954564] },
+  "Strasbourg": { coords: [7.7505894, 48.5818679] },
+  "Arçon": { coords: [6.3839249, 46.9453348] },
+  "Luxembourg": { coords: [6.1308563, 49.6106593] },
+  "Niederanven": { coords: [6.2437456, 49.6532855] },
+  "contas": { coords: [6.7268638, 45.8221145] },
+};
+
+
+
 const map = new Map({
   target: 'map',
   layers: [
@@ -29,16 +43,6 @@ const map = new Map({
 
 
 
-
-const locations = {
-  "Paris": { coords: [2.3290438, 48.8629166] },
-  "Marseille": { coords: [5.3744239, 43.2954564] },
-  "Strasbourg": { coords: [7.7505894, 48.5818679] },
-  "Arçon": { coords: [6.3839249, 46.9453348] },
-  "Luxembourg": { coords: [6.1308563, 49.6106593] },
-  "Niederanven": { coords: [6.2437456, 49.6532855] },
-};
-
 document.getElementById("location-menu").addEventListener("change", (event) => {
   const selectedIndex = event.target.value;
   if (!selectedIndex) return
@@ -48,6 +52,7 @@ document.getElementById("location-menu").addEventListener("change", (event) => {
     zoom: 17
   }));
 });
+
 
 
 // set view from URL parameters
