@@ -1,7 +1,7 @@
 import './style.css';
 import { Map, View, Feature } from 'ol';
 import TileLayer from 'ol/layer/Tile';
-//import OSM from 'ol/source/OSM';
+import OSM from 'ol/source/OSM';
 import ImageTile from 'ol/source/ImageTile.js';
 import { fromLonLat } from 'ol/proj';
 import { Point } from 'ol/geom';
@@ -30,11 +30,13 @@ const pointsLayer = new VectorLayer({
   source: new VectorSource({ features: features }),
   style: new Style({
     image: new Circle({
-      radius: 6,
+      radius: 10,
       fill: new Fill({ color: 'red' }),
       stroke: new Stroke({ color: 'white', width: 2 })
     })
-  })
+  }),
+  minZoom: 0,
+  maxZoom: 11,
 });
 
 
@@ -42,20 +44,24 @@ const pointsLayer = new VectorLayer({
 const map = new Map({
   target: 'map',
   layers: [
-    /*new TileLayer({
-      source: new OSM()
-    }),*/
+    new TileLayer({
+      source: new OSM(),
+      minZoom: 0,
+      maxZoom: 11,
+    }),
     new TileLayer({
       source: new ImageTile({
         url:
           'https://raw.githubusercontent.com/jgaffuri/CartoHD_webmap/main/tiles/{z}/{x}/{y}.png',
+        minZoom: 12,
+        maxZoom: 18,
       }),
     }),
     pointsLayer,
   ],
   view: new View({
     center: [598290, 5357042],
-    zoom: 19,
+    zoom: 17,
     minZoom: 1,
     maxZoom: 18,
   })
