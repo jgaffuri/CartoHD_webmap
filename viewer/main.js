@@ -7,8 +7,7 @@ import { fromLonLat } from 'ol/proj';
 import { Point } from 'ol/geom';
 import VectorLayer from 'ol/layer/Vector.js';
 import VectorSource from 'ol/source/Vector.js';
-import { Style, Fill, Stroke, Circle } from 'ol/style';
-//import CircleStyle from 'ol/style/Circle.js';
+import { Style, Fill, Stroke, Circle } from 'ol/style.js';
 
 const locations = {
   "Paris": { coords: [2.3290438, 48.8629166] },
@@ -17,29 +16,25 @@ const locations = {
   "Arçon": { coords: [6.3839249, 46.9453348] },
   "Luxembourg": { coords: [6.1308563, 49.6106593] },
   "Niederanven": { coords: [6.2437456, 49.6532855] },
-  "contas": { coords: [6.7268638, 45.8221145] },
-  "Versailles": { coords: [2.1139099, 8.8065094] },
-  "heron": { coords: [5.0976879, 50.5503393] },
+  "Les Contamines": { coords: [6.7268638, 45.8221145] },
+  "Versailles": { coords: [2.1105409, 48.8073645] },
+  "Héron": { coords: [5.0976879, 50.5503393] },
 };
 
-const features = Object.values(locations).map(coord =>
-  new Feature({ geometry: new Point(fromLonLat(coord)) })
+
+const features = Object.values(locations).map(d =>
+  new Feature({ geometry: new Point(fromLonLat(d.coords)) })
 );
 
-
-/*
-const pointStyle = new Style({
-  image: new Circle({
-    radius: 6,
-    fill: new Fill({ color: 'red' }),
-    stroke: new Stroke({ color: 'white', width: 2 })
-  })
-});*/
-
-
-const vectorLayer = new VectorLayer({
+const pointsLayer = new VectorLayer({
   source: new VectorSource({ features: features }),
-  //style: pointStyle
+  style: new Style({
+    image: new Circle({
+      radius: 6,
+      fill: new Fill({ color: 'red' }),
+      stroke: new Stroke({ color: 'white', width: 2 })
+    })
+  })
 });
 
 
@@ -56,7 +51,7 @@ const map = new Map({
           'https://raw.githubusercontent.com/jgaffuri/CartoHD_webmap/main/tiles/{z}/{x}/{y}.png',
       }),
     }),
-    vectorLayer,
+    pointsLayer,
   ],
   view: new View({
     center: [598290, 5357042],
