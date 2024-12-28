@@ -5,9 +5,10 @@ import TileLayer from 'ol/layer/Tile';
 import ImageTile from 'ol/source/ImageTile.js';
 import { fromLonLat } from 'ol/proj';
 import { Point } from 'ol/geom';
-import VectorLayer from 'ol/layer/Vector.js';
-import VectorSource from 'ol/source/Vector.js';
-import { Style, Fill, Circle, Stroke } from 'ol/Style';
+import { Vector as VectorSource } from 'ol/source.js';
+import { Vector as VectorLayer } from 'ol/layer.js';
+
+import { Style, Circle, Fill, Stroke } from 'ol/style';
 
 
 
@@ -29,13 +30,13 @@ const features = Object.values(locations).map(coord =>
 
 const vectorLayer = new VectorLayer({
   source: new VectorSource({ features: features }),
-  style: new Style({
+  /*style: new Style({
     image: new Circle({
-      radius: 10,
+      radius: 1000,
       fill: new Fill({ color: 'red' }),
       stroke: new Stroke({ color: 'white', width: 2 })
     })
-  })
+  })*/
 });
 
 
