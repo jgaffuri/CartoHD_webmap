@@ -23,9 +23,9 @@ const locations = {
 const map = new Map({
   target: 'map',
   layers: [
-    new TileLayer({
+    /*new TileLayer({
       source: new OSM()
-    }),
+    }),*/
     new TileLayer({
       source: new ImageTile({
         url:
