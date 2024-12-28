@@ -32,8 +32,8 @@ const map = new Map({
 
 
 const locations = {
-  "Marseille": { coords: [-74.006, 40.7128] },
-  "Strasbourg": { coords: [-0.1276, 51.5074] },
+  "Marseille": { coords: [598244, 5357038] },
+  "Strasbourg": { coords: [862754, 6204169] },
   "Arçon": { coords: [139.6917, 35.6895] },
 };
 
@@ -44,8 +44,8 @@ document.getElementById("location-menu").addEventListener("change", (event) => {
   const view = map.getView();
   view.animate({
     center: location.coords,
-    zoom: 10,
-    duration: 1000,
+    zoom: 18,
+    duration: 0,
   });
 });
 
