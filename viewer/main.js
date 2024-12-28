@@ -7,10 +7,8 @@ import { fromLonLat } from 'ol/proj';
 import { Point } from 'ol/geom';
 import { Vector as VectorSource } from 'ol/source.js';
 import { Vector as VectorLayer } from 'ol/layer.js';
-
-import { Style, Circle, Fill, Stroke } from 'ol/style';
-
-
+import { Fill, Stroke } from 'ol/style';
+import CircleStyle from 'ol/style/Circle.js';
 
 const locations = {
   "Paris": { coords: [2.3290438, 48.8629166] },
@@ -30,12 +28,10 @@ const features = Object.values(locations).map(coord =>
 
 const vectorLayer = new VectorLayer({
   source: new VectorSource({ features: features }),
-  /*style: new Style({
-    image: new Circle({
-      radius: 1000,
-      fill: new Fill({ color: 'red' }),
-      stroke: new Stroke({ color: 'white', width: 2 })
-    })
+  /*style: new CircleStyle({
+    radius: 100,
+    fill: new Fill({ color: 'red' }),
+    stroke: new Stroke({ color: 'white', width: 2 })
   })*/
 });
 
