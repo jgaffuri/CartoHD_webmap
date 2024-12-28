@@ -46,3 +46,12 @@ document.getElementById("location-menu").addEventListener("change", (event) => {
   }));
 });
 
+
+// set view from URL parameters
+const urlParams = new URLSearchParams(window.location.search);
+if(urlParams.get('lon') && urlParams.get('lat') && urlParams.get('z')) {
+  map.setView(new View({
+    center: fromLonLat([+urlParams.get('lon'), +urlParams.get('lat')]),
+    zoom: +urlParams.get('z')
+  }));
+}
