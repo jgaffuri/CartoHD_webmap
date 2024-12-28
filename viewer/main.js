@@ -16,6 +16,8 @@ const locations = {
   "Luxembourg": { coords: [6.1308563, 49.6106593] },
   "Niederanven": { coords: [6.2437456, 49.6532855] },
   "contas": { coords: [6.7268638, 45.8221145] },
+  "Versailles": { coords: [2.1139099, 8.8065094] },
+  "heron": { coords: [5.0976879, 50.5503393] },
 };
 
 
