@@ -1,10 +1,13 @@
 import './style.css';
-import { Map, View } from 'ol';
+import { Map, View, Feature } from 'ol';
 import TileLayer from 'ol/layer/Tile';
-import OSM from 'ol/source/OSM';
+//import OSM from 'ol/source/OSM';
 import ImageTile from 'ol/source/ImageTile.js';
 import { fromLonLat } from 'ol/proj';
-
+import { Point } from 'ol/geom';
+import VectorLayer from 'ol/layer/Vector.js';
+import VectorSource from 'ol/source/Vector.js';
+import { Style, Fill, Circle, Stroke } from 'ol/Style';
 
 
 
@@ -20,6 +23,21 @@ const locations = {
   "heron": { coords: [5.0976879, 50.5503393] },
 };
 
+const features = Object.values(locations).map(coord =>
+  new Feature({ geometry: new Point(fromLonLat(coord)) })
+);
+
+const vectorLayer = new VectorLayer({
+  source: new VectorSource({ features: features }),
+  style: new Style({
+    image: new Circle({
+      radius: 10,
+      fill: new Fill({ color: 'red' }),
+      stroke: new Stroke({ color: 'white', width: 2 })
+    })
+  })
+});
+
 
 
 const map = new Map({
@@ -34,6 +52,7 @@ const map = new Map({
           'https://raw.githubusercontent.com/jgaffuri/CartoHD_webmap/main/tiles/{z}/{x}/{y}.png',
       }),
     }),
+    vectorLayer,
   ],
   view: new View({
     center: [598290, 5357042],
@@ -59,7 +78,7 @@ document.getElementById("location-menu").addEventListener("change", (event) => {
 
 // set view from URL parameters
 const urlParams = new URLSearchParams(window.location.search);
-if(urlParams.get('lon') && urlParams.get('lat') && urlParams.get('z')) {
+if (urlParams.get('lon') && urlParams.get('lat') && urlParams.get('z')) {
   map.setView(new View({
     center: fromLonLat([+urlParams.get('lon'), +urlParams.get('lat')]),
     zoom: +urlParams.get('z')
