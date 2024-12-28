@@ -55,3 +55,4 @@ if(urlParams.get('lon') && urlParams.get('lat') && urlParams.get('z')) {
     zoom: +urlParams.get('z')
   }));
 }
+
