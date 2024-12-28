@@ -31,6 +31,7 @@ const map = new Map({
 
 
 const locations = {
+  "Paris": { coords: [2.3290438, 48.8629166] },
   "Marseille": { coords: [5.3744239, 43.2954564] },
   "Strasbourg": { coords: [7.7505894, 48.5818679] },
   "Arçon": { coords: [6.3839249, 46.9453348] },
