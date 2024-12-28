@@ -1,5 +1,5 @@
 import './style.css';
-import {Map, View} from 'ol';
+import { Map, View } from 'ol';
 import TileLayer from 'ol/layer/Tile';
 import OSM from 'ol/source/OSM';
 import ImageTile from 'ol/source/ImageTile.js';
@@ -26,4 +26,26 @@ const map = new Map({
   })
 });
 
+
+
+
+
+
+const locations = {
+  "Marseille": { coords: [-74.006, 40.7128] },
+  "Strasbourg": { coords: [-0.1276, 51.5074] },
+  "Arçon": { coords: [139.6917, 35.6895] },
+};
+
+document.getElementById("location-menu").addEventListener("change", (event) => {
+  const selectedIndex = event.target.value;
+  if (!selectedIndex) return
+  const location = locations[selectedIndex];
+  const view = map.getView();
+  view.animate({
+    center: location.coords,
+    zoom: 10,
+    duration: 1000,
+  });
+});
 
