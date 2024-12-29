@@ -27,6 +27,8 @@ const locations = {
   "Carcassonne": { coords: [2.3637022, 43.2064712] },
   "Mont Aiguille": { coords: [5.5505244, 44.8410252] },
   "Neuf-Brisach": { coords: [7.5282023, 48.0178219] },
+  "La Capte": { coords: [6.1488792, 43.0589803] },
+  "Solliès-Pont": { coords: [6.0335515, 43.1943149] },
 };
 
 
@@ -38,8 +40,8 @@ const pointsLayer = new VectorLayer({
   source: new VectorSource({ features: features }),
   style: new Style({
     image: new Circle({
-      radius: 10,
-      fill: new Fill({ color: 'red' }),
+      radius: 8,
+      fill: new Fill({ color: 'blue' }),
       stroke: new Stroke({ color: 'white', width: 2 })
     })
   }),
