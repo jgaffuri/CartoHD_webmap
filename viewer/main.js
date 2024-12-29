@@ -62,8 +62,8 @@ const map = new Map({
   layers: [
     new TileLayer({
       source: new OSM(),
-      minZoom: 0,
-      maxZoom: 11,
+      //minZoom: 0,
+      //maxZoom: 11,
     }),
     new TileLayer({
       source: new ImageTile({
