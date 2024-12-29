@@ -13,9 +13,9 @@ const locations = {
   "Paris": { coords: [2.3290438, 48.8629166] },
   "Marseille": { coords: [5.3744239, 43.2954564] },
   "Strasbourg": { coords: [7.7505894, 48.5818679] },
-  "Arçon": { coords: [6.3839249, 46.9453348] },
   "Luxembourg": { coords: [6.1308563, 49.6106593] },
   "Niederanven": { coords: [6.2437456, 49.6532855] },
+  "Arçon": { coords: [6.3839249, 46.9453348] },
   "Les Contamines": { coords: [6.7268638, 45.8221145] },
   "Versailles": { coords: [2.1105409, 48.8073645] },
   "Héron": { coords: [5.0976879, 50.5503393] },
@@ -24,6 +24,9 @@ const locations = {
   "Vianden": { coords: [6.2026872, 49.9349985] },
   "Cité Descartes": { coords: [2.5872958, 48.8413238] },
   "Toulouse sud": { coords: [1.478165, 43.5502836] },
+  "Carcassonne": { coords: [2.3637022, 43.2064712] },
+  "Mont Aiguille": { coords: [6.2026872, 49.9349985] },
+  "Neuf-Brisach": { coords: [7.5282023, 48.0178219] },
 };
 
 
