@@ -3,7 +3,7 @@ import { Map, View, Feature } from 'ol';
 import TileLayer from 'ol/layer/Tile';
 import OSM from 'ol/source/OSM';
 import ImageTile from 'ol/source/ImageTile.js';
-import { fromLonLat } from 'ol/proj';
+import { fromLonLat, toLonLat } from 'ol/proj';
 import { Point } from 'ol/geom';
 import VectorLayer from 'ol/layer/Vector.js';
 import VectorSource from 'ol/source/Vector.js';
@@ -89,4 +89,29 @@ if (urlParams.get('lon') && urlParams.get('lat') && urlParams.get('z')) {
     zoom: +urlParams.get('z')
   }));
 }
+
+
+
+
+
+// Function to update URL with lon, lat, and z
+const updateURL = () => {
+  const view = map.getView();
+  const center = toLonLat(view.getCenter());
+  const zoom = view.getZoom();
+
+  const lon = center[0].toFixed(5);
+  const lat = center[1].toFixed(5);
+
+  const newURL = `${window.location.pathname}?lon=${lon}&lat=${lat}&z=${zoom}`;
+  window.history.replaceState({}, '', newURL);
+};
+
+// Listen to changes in the map's view
+const view = map.getView();
+view.on('change:center', updateURL);
+view.on('change:resolution', updateURL);
+
+// Initial URL update
+updateURL();
 
