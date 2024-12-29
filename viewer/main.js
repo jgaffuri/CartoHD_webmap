@@ -75,10 +75,8 @@ document.getElementById("location-menu").addEventListener("change", (event) => {
   const selectedIndex = event.target.value;
   if (!selectedIndex) return
   const location = locations[selectedIndex];
-  map.setView(new View({
-    center: fromLonLat(location.coords),
-    zoom: 17
-  }));
+  view.setCenter(fromLonLat(location.coords));
+  view.setZoom(17);
 });
 
 
@@ -86,10 +84,8 @@ document.getElementById("location-menu").addEventListener("change", (event) => {
 // set view from URL parameters
 const urlParams = new URLSearchParams(window.location.search);
 if (urlParams.get('lon') && urlParams.get('lat') && urlParams.get('z')) {
-  map.setView(new View({
-    center: fromLonLat([+urlParams.get('lon'), +urlParams.get('lat')]),
-    zoom: +urlParams.get('z')
-  }));
+  view.setCenter(fromLonLat([+urlParams.get('lon'), +urlParams.get('lat')]));
+  view.setZoom(+urlParams.get('z'));
 }
 
 
@@ -98,9 +94,8 @@ if (urlParams.get('lon') && urlParams.get('lat') && urlParams.get('z')) {
 
 // Function to update URL with lon, lat, and z
 const updateURL = () => {
+  const zoom = view.getZoom().toFixed(2);
   const center = toLonLat(view.getCenter());
-  const zoom = view.getZoom();
-
   const lon = center[0].toFixed(5);
   const lat = center[1].toFixed(5);
 
