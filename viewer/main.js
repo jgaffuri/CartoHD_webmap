@@ -25,7 +25,7 @@ const locations = {
   "Cité Descartes": { coords: [2.5872958, 48.8413238] },
   "Toulouse sud": { coords: [1.478165, 43.5502836] },
   "Carcassonne": { coords: [2.3637022, 43.2064712] },
-  "Mont Aiguille": { coords: [6.2026872, 49.9349985] },
+  "Mont Aiguille": { coords: [5.5505244, 44.8410252] },
   "Neuf-Brisach": { coords: [7.5282023, 48.0178219] },
 };
 
