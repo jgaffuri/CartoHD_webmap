@@ -41,6 +41,14 @@ const pointsLayer = new VectorLayer({
 
 
 
+const view = new View({
+  center: [598290, 5357042],
+  zoom: 17,
+  minZoom: 1,
+  maxZoom: 18,
+})
+
+
 const map = new Map({
   target: 'map',
   layers: [
@@ -59,14 +67,8 @@ const map = new Map({
     }),
     pointsLayer,
   ],
-  view: new View({
-    center: [598290, 5357042],
-    zoom: 17,
-    minZoom: 1,
-    maxZoom: 18,
-  })
+  view: view
 });
-
 
 
 document.getElementById("location-menu").addEventListener("change", (event) => {
@@ -96,7 +98,6 @@ if (urlParams.get('lon') && urlParams.get('lat') && urlParams.get('z')) {
 
 // Function to update URL with lon, lat, and z
 const updateURL = () => {
-  const view = map.getView();
   const center = toLonLat(view.getCenter());
   const zoom = view.getZoom();
 
@@ -108,7 +109,6 @@ const updateURL = () => {
 };
 
 // Listen to changes in the map's view
-const view = map.getView();
 view.on('change:center', updateURL);
 view.on('change:resolution', updateURL);
 
