@@ -22,6 +22,8 @@ const locations = {
   "Besançon": { coords: [6.0311831, 47.2328378] },
   "Lac Pavin": { coords: [2.888034, 45.4927152] },
   "Vianden": { coords: [6.2026872, 49.9349985] },
+  "Cité Descartes": { coords: [2.5872958, 48.8413238] },
+  "Toulouse sud": { coords: [1.478165, 43.5502836] },
 };
 
 
