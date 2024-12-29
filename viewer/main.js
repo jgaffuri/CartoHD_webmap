@@ -21,6 +21,7 @@ const locations = {
   "Héron": { coords: [5.0976879, 50.5503393] },
   "Besançon": { coords: [6.0311831, 47.2328378] },
   "Lac Pavin": { coords: [2.888034, 45.4927152] },
+  "Vianden": { coords: [6.2026872, 49.9349985] },
 };
 
 
