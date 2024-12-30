@@ -120,3 +120,4 @@ view.on('change:resolution', updateURL);
 // Initial URL update
 updateURL();
 
+
