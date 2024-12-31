@@ -18,6 +18,7 @@ const locations = {
   "Arçon": { coords: [6.3839249, 46.9453348] },
   "Les Contamines": { coords: [6.7268638, 45.8221145] },
   "Versailles": { coords: [2.1105409, 48.8073645] },
+  "Aigues-Mortes": { coords: [4.1901557, 43.5681482] },
   "Héron": { coords: [5.0976879, 50.5503393] },
   "Besançon": { coords: [6.0311831, 47.2328378] },
   "Lac Pavin": { coords: [2.888034, 45.4927152] },
