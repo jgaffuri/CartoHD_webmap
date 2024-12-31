@@ -29,6 +29,8 @@ const locations = {
   "Neuf-Brisach": { coords: [7.5282023, 48.0178219] },
   "La Capte": { coords: [6.1488792, 43.0589803] },
   "Solliès-Pont": { coords: [6.0335515, 43.1943149] },
+  "Montagne Sainte-Victoire": { coords: [2.3637022, 43.2064712] },
+  "Fougerolles": { coords: [2.3637022, 43.2064712] },
 };
 
 
