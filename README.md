@@ -1,4 +1,3 @@
 # CartoHD_webmap
 
-See demo: https://jgaffuri.github.io/CartoHD_webmap/viewer/dist/
-
+[Here is **the map** !](https://jgaffuri.github.io/CartoHD_webmap/viewer/dist/)
