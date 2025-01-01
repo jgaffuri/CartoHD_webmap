@@ -14,7 +14,7 @@ const locations = {
   "Marseille": { coords: [5.3744239, 43.2954564] },
   "Strasbourg": { coords: [7.7505894, 48.5818679] },
   "Luxembourg": { coords: [6.1308563, 49.6106593] },
-  "Niederanven": { coords: [6.2437456, 49.6532855] },
+  "Niederanven": { coords: [6.23987, 49.65856] },
   "Arçon": { coords: [6.3839249, 46.9453348] },
   "Les Contamines": { coords: [6.7268638, 45.8221145] },
   "Versailles": { coords: [2.1105409, 48.8073645] },
@@ -57,7 +57,7 @@ const pointsLayer = new VectorLayer({
 
 const view = new View({
   center: [598290, 5357042],
-  zoom: 17,
+  zoom: 18,
   minZoom: 1,
   maxZoom: 18,
 })
@@ -76,7 +76,7 @@ const map = new Map({
         url:
           'https://raw.githubusercontent.com/jgaffuri/CartoHD_webmap/main/tiles/{z}/{x}/{y}.png',
         minZoom: 12,
-        maxZoom: 18,
+        //maxZoom: 20,
       }),
     }),
     pointsLayer,
@@ -90,7 +90,7 @@ document.getElementById("location-menu").addEventListener("change", (event) => {
   if (!selectedIndex) return
   const location = locations[selectedIndex];
   view.setCenter(fromLonLat(location.coords));
-  view.setZoom(17);
+  view.setZoom(18);
 });
 
 
