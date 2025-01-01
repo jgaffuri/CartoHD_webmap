@@ -32,6 +32,7 @@ const locations = {
   "Solliès-Pont": { coords: [6.0335515, 43.1943149] },
   "Montagne Sainte-Victoire": { coords: [5.5674373, 43.5275541] },
   "Fougerolles": { coords: [6.4047287, 47.8861336] },
+  "calanques": { coords: [5.4445471, 43.2119815] },
 };
 
 
