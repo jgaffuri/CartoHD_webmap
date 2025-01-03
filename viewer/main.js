@@ -58,7 +58,7 @@ const pointsLayer = new VectorLayer({
       stroke: new Stroke({ color: 'white', width: 2 })
     })
   }),
-  minZoom: 0,
+  //minZoom: 0,
   maxZoom: 11,
 });
 
@@ -78,14 +78,15 @@ const map = new Map({
     new TileLayer({
       source: new OSM(),
       //minZoom: 0,
-      maxZoom: 11,
+      maxZoom: 13,
     }),
     new TileLayer({
       source: new ImageTile({
         url:
           'https://raw.githubusercontent.com/jgaffuri/CartoHD_webmap/main/tiles/{z}/{x}/{y}.png',
         minZoom: 12,
-        //maxZoom: 20,
+        maxZoom: 18,
+        attributions: ['Map produced with <a href="https://github.com/jgaffuri/CartoHD/tree/main/src" target="_blank">CartoHD</a> !']
       }),
     }),
     pointsLayer,
