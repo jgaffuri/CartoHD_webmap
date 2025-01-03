@@ -33,13 +33,12 @@ const locations = {
   "Montagne Sainte-Victoire": { coords: [5.5674373, 43.5275541] },
   "Fougerolles": { coords: [6.4047287, 47.8861336] },
   "calanques": { coords: [5.4445471, 43.2119815] },
-
-//defense ?lon=2.23749&lat=48.89249&z=18.00
-//ile aix  1.17429&lat=46.01316&z=18.00
-//villandry ?lon=0.51361&lat=47.33997&z=17.89
-//larzac
-//mont_blanc
-
+  "defense": { coords: [2.23749, 48.89249] },
+  "ile_aix": { coords: [1.17429, 46.01316] },
+  "villandry": { coords: [0.51361, 47.33997] },
+  "larzac": { coords: [3.316639, 43.9124679] },
+  "mont_blanc": { coords: [6.8645688, 45.832667] },
+  //"": { coords: [, ] },
 
 };
 
