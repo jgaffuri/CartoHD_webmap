@@ -41,6 +41,8 @@ const locations = {
   "toulouse": { coords: [1.4394938, 43.6018207] },
   "gavarnie": { coords: [-0.0084047, 42.695231] },
   "dune_pilat": { coords: [-1.2093208, 44.5999112] },
+  "aix_en_pce": { coords: [5.4453353, 43.5262874] },
+  "toulon": { coords: [5.9451519, 43.107892] },
   //"": { coords: [, ] },
 };
 
