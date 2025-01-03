@@ -38,8 +38,10 @@ const locations = {
   "villandry": { coords: [0.51361, 47.33997] },
   "larzac": { coords: [3.316639, 43.9124679] },
   "mont_blanc": { coords: [6.8645688, 45.832667] },
+  "toulouse": { coords: [1.4394938, 43.6018207] },
+  "gavarnie": { coords: [-0.0084047, 42.695231] },
+  "dune_pilat": { coords: [-1.2093208, 44.5999112] },
   //"": { coords: [, ] },
-
 };
 
 
