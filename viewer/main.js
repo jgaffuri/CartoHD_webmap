@@ -102,7 +102,7 @@ const map = new Map({
           'https://raw.githubusercontent.com/jgaffuri/CartoHD_webmap/main/tiles/{z}/{x}/{y}.png',
         minZoom: 12,
         maxZoom: 18,
-        attributions: ['Map produced with <a href="https://github.com/jgaffuri/CartoHD/tree/main/src" target="_blank">CartoHD</a> !']
+        attributions: ['Map produced with <a href="https://github.com/jgaffuri/CartoHD/" target="_blank">CartoHD</a> !']
       }),
     }),
     pointsLayer,
