@@ -57,7 +57,6 @@ const locations = {
   "bordeaux": { coords: [-0.5749096, 44.8453942] },
   "lyon": { coords: [4.8322146, 45.7578678] },
   "crest": { coords: [5.021972, 44.7284722] },
-
   "clermont": { coords: [3.0858096, 45.7780322] },
   "montpellier": { coords: [3.8874967, 43.6082] },
   "nimes": { coords: [4.3594966, 43.8349092] },
