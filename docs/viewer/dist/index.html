@@ -4,7 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="3;url=https://jgaffuri.github.io/CartoHD_webmap/pub/">
+
+
+    <script>
+        //<meta http-equiv="refresh" content="3;url=https://jgaffuri.github.io/CartoHD_webmap/pub/">
+
+        const parts = window.location.href.split('?');
+        if(parts.length == 1)
+            window.location.href = "https://jgaffuri.github.io/CartoHD_webmap/pub/";
+        else
+            window.location.href = "https://jgaffuri.github.io/CartoHD_webmap/pub/?" + parts[1];
+        
+    </script>
+
 </head>
 <body>
     <p>If you are not redirected automatically, <a href="https://jgaffuri.github.io/CartoHD_webmap/pub/">click here</a>.</p>
