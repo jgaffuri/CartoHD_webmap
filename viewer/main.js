@@ -57,7 +57,18 @@ const locations = {
   "bordeaux": { coords: [-0.5749096, 44.8453942] },
   "lyon": { coords: [4.8322146, 45.7578678] },
   "crest": { coords: [5.021972, 44.7284722] },
-  //"": { coords: [, ] },
+
+  "clermont": { coords: [, ] },
+  "montpellier": { coords: [3.8874967, 43.6082] },
+  "nimes": { coords: [4.3594966, 43.8349092] },
+  "arras": { coords: [2.7769919, 50.2911105] },
+  "calais": { coords: [1.8543222, 50.9529371] },
+  "amiens": { coords: [2.3010287, 49.8949548] },
+  "bayonne": { coords: [-1.475217, 43.4900949] },
+  "st_etienne": { coords: [4.3859732, 45.4412244] },
+  "rocamadour": { coords: [1.616884, 44.799164] },
+  "viaduc_millau": { coords: [3.0217457, 44.0853518] },
+  "roscoff": { coords: [-3.9790599, 48.7230518] },
 };
 
 
