@@ -4,5 +4,5 @@ This repository contains a high definition large scale web map produced from [Li
 
 [The map is **there** !](https://jgaffuri.github.io/CartoHD_webmap/viewer/dist/)
 
-[![map with LiDAR data](/doc/example.png)](https://jgaffuri.github.io/CartoHD_webmap/viewer/dist/?lon=5.39755&lat=43.30593&z=18.00)
+[![map with LiDAR data](/docs/example.png)](https://jgaffuri.github.io/CartoHD_webmap/viewer/dist/?lon=5.39755&lat=43.30593&z=18.00)
 
