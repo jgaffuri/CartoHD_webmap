@@ -91,7 +91,7 @@ const pointsLayer = new VectorLayer({
 
 
 const view = new View({
-  center: [598290, 5357042],
+  center: fromLonLat([5.38487, 43.30026]),
   zoom: 18,
   minZoom: 1,
   maxZoom: 18,
