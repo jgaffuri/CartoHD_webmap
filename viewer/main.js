@@ -68,6 +68,7 @@ const locations = {
   "rocamadour": { coords: [1.616884, 44.799164] },
   "viaduc_millau": { coords: [3.0217457, 44.0853518] },
   "roscoff": { coords: [-3.9790599, 48.7230518] },
+  "vitry": { coords: [2.39120, 48.7877] },
 };
 
 
