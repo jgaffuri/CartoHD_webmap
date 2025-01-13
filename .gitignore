@@ -1,4 +1,4 @@
-viewer/node_modules/
-viewer/package-lock.json
+node_modules/
+package-lock.json
 .cache
 .vscode/

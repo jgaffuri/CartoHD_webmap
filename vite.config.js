@@ -1,6 +1,6 @@
 export default {
   build: {
     sourcemap: true,
-    outDir: '../docs/pub/',
+    outDir: '/docs/pub/',
   }
 }
