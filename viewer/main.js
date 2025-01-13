@@ -68,7 +68,12 @@ const locations = {
   "rocamadour": { coords: [1.616884, 44.799164] },
   "viaduc_millau": { coords: [3.0217457, 44.0853518] },
   "roscoff": { coords: [-3.9790599, 48.7230518] },
-  "vitry": { coords: [2.39120, 48.7877] },
+  "carlit": { coords: [1.93815, 42.57352] },
+  "mont_louis": { coords: [2.11797, 42.50976] },
+  "annecy": { coords: [6.12722, 45.89835] },
+  "avoriaz": { coords: [6.77732, 46.18994] },
+  "puy_dome": { coords: [2.96458, 45.77248] },
+  "briancon": { coords: [6.64492, 44.89873] },
 };
 
 
