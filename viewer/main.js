@@ -74,7 +74,10 @@ const locations = {
   "avoriaz": { coords: [6.77732, 46.18994] },
   "puy_dome": { coords: [2.96458, 45.77248] },
   "briancon": { coords: [6.64492, 44.89873] },
+  "vitry": { coords: [2.39246, 48.78838] },
+  "le_mans": { coords: [0.19389, 48.00597] },
 };
+
 
 
 const features = Object.values(locations).map(d =>
