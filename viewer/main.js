@@ -77,8 +77,13 @@ const locations = {
   "vitry": { coords: [2.39246, 48.78838] },
   "le_mans": { coords: [0.19389, 48.00597] },
   "auxerre": { coords: [3.57493, 47.79626] },
-};
 
+  "avignon": { coords: [0.19389, 48.00597] },  /@43.9525394,4.8061048,17.
+  "valence": { coords: [0.19389, 48.00597] },  s/@44.9292393,4.8885867,51m/data=!3m
+  "mulhouse": { coords: [0.19389, 48.00597] },  @47.7473761,7.3385146,46m/data
+  "tours": { coords: [0.19389, 48.00597] },  /@47.3954014,0.693324,53m/da
+
+};
 
 
 const features = Object.values(locations).map(d =>
