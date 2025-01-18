@@ -76,6 +76,7 @@ const locations = {
   "briancon": { coords: [6.64492, 44.89873] },
   "vitry": { coords: [2.39246, 48.78838] },
   "le_mans": { coords: [0.19389, 48.00597] },
+  "auxerre": { coords: [3.57493, 47.79626] },
 };
 
 
